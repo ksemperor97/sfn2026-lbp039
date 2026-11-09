@@ -115,7 +115,7 @@ code gains: the encoding (E) code, the delay (D) code, or the transfer between t
 <p>Statistics are paired across the seven people: mean [95% t interval], t(6) and two-sided p, with the exact
 sign-flip p over all 2⁷ sign patterns where the poster uses it.</p>
 <h3>Poster panel and section</h3>
-<table><thead><tr><th>Panel</th><th>Poster headline</th><th>Section</th></tr></thead><tbody><tr><td>1</td><td>At 3 T, working-memory representations in early visual cortex form a re-embedded code</td><td>S0, S11</td></tr><tr><td>2</td><td>Orientation estimation task and 7 T fMRI acquisition</td><td>S1, S2</td></tr><tr><td>3</td><td>Preprocessing: per session, in acquired EPI space</td><td>S3</td></tr><tr><td>4</td><td>Within-depth smoothing cuts noise, sharpens maps and keeps depths apart</td><td>S4</td></tr><tr><td>5</td><td>Cross-decoding tests for a shared code; radiality and geometry test spatial organization</td><td>S5, S6</td></tr><tr><td>6</td><td>Smoothing improves decoding during encoding only, not during the delay or across epochs</td><td>S7</td></tr><tr><td>7</td><td>Smoothing sharpens the radial map and orientation geometry of the sensory code, not the mnemonic code</td><td>S8</td></tr><tr><td>8</td><td>Feedforward (middle) and feedback (superficial, deep) layers during encoding and delay</td><td>S9</td></tr><tr><td>9</td><td>Future plans: from 3 T subspaces to 7 T layers</td><td>S10</td></tr></tbody></table>
+<table><thead><tr><th>Panel</th><th>Poster headline</th><th>Section</th></tr></thead><tbody><tr><td>1</td><td>At 3 T, working-memory representations in early visual cortex form a re-embedded code</td><td>S0, S11</td></tr><tr><td>2</td><td>Orientation estimation task and 7 T fMRI acquisition</td><td>S1, S2</td></tr><tr><td>3</td><td>Preprocessing: per session, in acquired EPI space</td><td>S3</td></tr><tr><td>4</td><td>Within-depth smoothing cuts noise, sharpens maps and keeps depths apart</td><td>S4</td></tr><tr><td>5</td><td>Cross-decoding tests for a shared code; radiality and geometry test spatial organization</td><td>S5, S6</td></tr><tr><td>6</td><td>Smoothing improves decoding during encoding only, not during the delay or across epochs</td><td>S7</td></tr><tr><td>7</td><td>Smoothing sharpens the radial map and orientation geometry of the sensory code, not the mnemonic code</td><td>S8</td></tr><tr><td>8</td><td>Feedforward (middle) and feedback (superficial, deep) layers during encoding and delay</td><td>S9</td></tr><tr><td>9</td><td>Future plans: locate each code along the two axes of cortex, columns and layers</td><td>S10</td></tr></tbody></table>
 </section><p class="partlabel">Methods</p>
 <section id="s1"><h2><span class="sn">S1</span>Participants, task and behaviour <span class="pp">Poster 2</span></h2>
 <p>Seven adults took part (2 female, 25–34 years). Each completed 2–3
@@ -357,18 +357,30 @@ volume outside gray matter.</p>
 Lawrence et al. against no effect, was 2.3 for the BOLD superficial − middle effect at
 the delay sample.</p>
 </section><p class="partlabel">Outlook</p>
-<section id="s10"><h2><span class="sn">S10</span>Future plans: from 3 T subspaces to 7 T layers <span class="pp">Poster 9</span></h2>
+<section id="s10"><h2><span class="sn">S10</span>Future plans: locate each code along the two axes of cortex, columns and layers <span class="pp">Poster 9</span></h2>
 <p>The 3 T study found that sensory and mnemonic orientation codes occupy separate subspaces of early visual
-cortex. Laminar 7 T fMRI lets us ask where in the cortical column each code lives.</p>
-<ol>
-<li><b>Decoding by layer.</b> Test whether feedforward (middle) depths carry the sensory code, decodable during
-encoding but weak during the delay, and feedback (superficial and deep) depths carry the mnemonic code, weak during
-encoding but strong during the delay. The depth pattern in S9, negative at encoding and positive at the delay,
-points in this direction.</li>
-<li><b>Geometry by layer.</b> Test the same split with orientation geometry (ring ρ) computed within each depth.</li>
-<li><b>Subspaces or populations?</b> Ask whether the separate sensory and mnemonic subspaces found at 3 T are in
-fact separate neural populations across cortical layers.</li>
-</ol>
+cortex and differ in spatial layout. At 7 T, within-depth processing lets us locate each code along the two axes of
+cortex: across the surface, at the scale of orientation columns, and through the depth, across layers.</p>
+<h3>Across the surface: columns</h3>
+<ul>
+<li><b>Question.</b> Is the mnemonic code carried by fine, column-like patterns rather than the radial map?</li>
+<li><b>Test.</b> Within each depth, split the activity map into coarse and fine spatial bands with matched noise, and
+decode each band at E and D. Smoothing (S4) removes fine-scale signal and noise together; band-limited decoding with
+matched noise separates the two. At 0.82 mm the fine band reaches spatial periods down to 1.64 mm.</li>
+<li><b>Prediction.</b> The delay code survives removal of the coarse map; the encoding code loses the part of its
+information carried by the radial map (S8).</li>
+</ul>
+<h3>Through the depth: layers</h3>
+<ul>
+<li><b>Question.</b> Are the separate 3 T subspaces one population that changes its code over time (a dynamic code),
+or different populations in different layers, each holding a stable code?</li>
+<li><b>Test.</b> Decoding, radiality and orientation geometry (ring ρ) computed within each depth bin at E and D.</li>
+<li><b>Prediction.</b> Different populations: orientation information moves from the middle depth at E to the
+superficial and deep depths at D. Dynamic code: the same depths carry the information at E and D, with a new code.
+The depth profile in S9, negative at E and positive at D, points toward different populations.</li>
+</ul>
+<p><b>Our hypothesis:</b> the sensory code is a coarse map in the middle layer; the mnemonic code is a column-scale
+code in the feedback layers.</p>
 </section><p class="partlabel">Reference</p>
 <section id="s11"><h2><span class="sn">S11</span>Glossary and references</h2>
 <dl>
