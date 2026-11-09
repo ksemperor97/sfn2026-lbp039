@@ -367,8 +367,10 @@ cortex: across the surface, at the scale of orientation columns, and through the
 <li><b>Test.</b> Within each depth, split the activity map into coarse and fine spatial bands with matched noise, and
 decode each band at E and D. Smoothing (S4) removes fine-scale signal and noise together; band-limited decoding with
 matched noise separates the two. At 0.82 mm the fine band reaches spatial periods down to 1.64 mm.</li>
-<li><b>Prediction.</b> The delay code survives removal of the coarse map; the encoding code loses the part of its
-information carried by the radial map (S8).</li>
+<li><b>Prediction.</b> A crossover between epoch and band: the encoding code sits in the coarse band, the radial
+map of S8, and the delay code in the fine band. Removing the coarse band lowers encoding decoding and spares delay
+decoding; removing the fine band does the opposite. The test is the epoch × band interaction in the fraction of
+decoding each band retains, so it also holds if the encoding code carries some fine-scale information.</li>
 </ul>
 <h3>Through the depth: layers</h3>
 <ul>
