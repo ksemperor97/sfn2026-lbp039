@@ -367,10 +367,10 @@ cortex: across the surface, at the scale of orientation columns, and through the
 <li><b>Test.</b> Within each depth, split the activity map into coarse and fine spatial bands with matched noise, and
 decode each band at E and D. Smoothing (S4) removes fine-scale signal and noise together; band-limited decoding with
 matched noise separates the two. At 0.82 mm the fine band reaches spatial periods down to 1.64 mm.</li>
-<li><b>Prediction.</b> A crossover between epoch and band: the encoding code sits in the coarse band, the radial
-map of S8, and the delay code in the fine band. Removing the coarse band lowers encoding decoding and spares delay
-decoding; removing the fine band does the opposite. The test is the epoch × band interaction in the fraction of
-decoding each band retains, so it also holds if the encoding code carries some fine-scale information.</li>
+<li><b>Prediction.</b> Orientation codes during perception carry both coarse and fine-scale information, so the
+encoding code is decoded from both bands; it serves as the positive control. The delay code is decoded from the fine
+band only, with coarse-band decoding at chance: the coarse map, including the radial map of S8, drops out of the
+delay code.</li>
 </ul>
 <h3>Through the depth: layers</h3>
 <ul>
@@ -381,8 +381,8 @@ or different populations in different layers, each holding a stable code?</li>
 superficial and deep depths at D. Dynamic code: the same depths carry the information at E and D, with a new code.
 The depth profile in S9, negative at E and positive at D, points toward different populations.</li>
 </ul>
-<p><b>Our hypothesis:</b> the sensory code is a coarse map in the middle layer; the mnemonic code is a column-scale
-code in the feedback layers.</p>
+<p><b>Our hypothesis:</b> the sensory code spans the coarse map and column-scale patterns in the middle layer; the
+mnemonic code keeps only a column-scale code, in the feedback layers.</p>
 </section><p class="partlabel">Reference</p>
 <section id="s11"><h2><span class="sn">S11</span>Glossary and references</h2>
 <dl>
